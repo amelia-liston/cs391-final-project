@@ -1,10 +1,6 @@
 import DisplayAll from "../DisplayAll.tsx";
-import styled from "styled-components";
+import DisplayAvatar from "../DisplayAvatar.tsx";
 
-const StyledImage = styled.img`
-    max-width: 30%;
-    margin: 1vh 1vw;
-`;
 
 export default function About() {
     return(
@@ -13,10 +9,11 @@ export default function About() {
                 <h1>About This Game</h1>
                 <h2>We're just some CS girlies curious about which mob we might be. We made these mob cards for the final results of the quiz. Take our quiz to find out which mob you are!</h2>
                 <DisplayAll/>
-                <StyledImage src={"/amelia-avatar.png"} alt="Amelia's Avatar"/>
-                <StyledImage src={"/mia-avatar.png"} alt="Mia's Avatar"/>
-                <StyledImage src={"/kris-avatar.png"} alt="Kris's Avatar"/>
-                <StyledImage src={"/sophia-avatar.png"} alt="Sophia's Avatar"/>
+                <h2>About the Creators</h2>
+                <DisplayAvatar img="/amelia-avatar.png" name="Amelia" bio="CS girly pop"/>
+                <DisplayAvatar img="/mia-avatar.png" name="Mia" bio="CS girly pop"/>
+                <DisplayAvatar img="/kris-avatar.png" name="Kris" bio="CS girly pop"/>
+                <DisplayAvatar img="/sophia-avatar.png" name="Sophia" bio="CS girly pop"/>
             </main>
         </>
     )
