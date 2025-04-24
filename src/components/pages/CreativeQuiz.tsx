@@ -1,4 +1,4 @@
-export default function QuizDisplay() {
+export default function CreativeQuiz() {
     return (
         <div>
             <h4>Question 1...</h4>

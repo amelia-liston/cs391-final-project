@@ -6,7 +6,8 @@ export default function HomePreview() {
       <div>
         <h1>Welcome to the Minecraft personality quiz!</h1>
         <h3>Press START to begin the quiz!</h3>
-        <Link to={`/QuizDisplay`}>START</Link>
+        <Link to={`/SurvivalQuiz`}>Survival mode</Link>
+        <Link to={`/CreativeQuiz`}>Creative mode</Link>
       </div>
     )
   }
