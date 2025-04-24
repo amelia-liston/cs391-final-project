@@ -1,6 +1,7 @@
 // import './App.css'
 import HomePreview from './components/pages/HomePreview';
-import QuizDisplay from './components/pages/QuizDisplay';
+import SurvivalQuiz from "./components/pages/SurvivalQuiz.tsx";
+import CreativeQuiz from "./components/pages/CreativeQuiz.tsx";
 import About from './components/pages/About';
 import { Route, Routes, createBrowserRouter, RouterProvider } from "react-router";
 import { styled } from "styled-components";
@@ -11,6 +12,7 @@ const StyledDiv = styled.div`
     // background-size: cover;
 `;
 
+
 export function Root() {
   return (
       <>
@@ -18,9 +20,12 @@ export function Root() {
               <Route path={`/*`}
                      element={<HomePreview />}
               />
-              <Route path={`/QuizDisplay`}
-                     element={<QuizDisplay />}
-                     />
+               <Route path={`/SurvivalQuiz`}
+                      element={<SurvivalQuiz />}
+               />
+               <Route path={`/CreativeQuiz`}
+                      element={<CreativeQuiz />}
+               />
                <Route path={`/About`}
                       element={<About />}
                />
