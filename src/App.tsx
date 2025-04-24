@@ -1,6 +1,7 @@
 import './App.css'
 import HomePreview from './components/pages/HomePreview';
 import QuizDisplay from './components/pages/QuizDisplay';
+import About from './components/pages/About';
 import { Route, Routes, createBrowserRouter, RouterProvider } from "react-router";
 
 export function Root() {
@@ -13,6 +14,9 @@ export function Root() {
               <Route path={`/QuizDisplay`}
                      element={<QuizDisplay />}
                      />
+               <Route path={`/About`}
+                      element={<About />}
+               />
           </Routes>
       </>
   );
