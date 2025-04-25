@@ -1,4 +1,4 @@
-export type CreativeTypes= {
+export type CreativeTypes = {
     id: string;
     question: string;
     // a1
