@@ -1,0 +1,181 @@
+{
+  "creativeQuestions":
+  [
+    {
+      "id": "id1",
+      "question": "A creative! I see you :) What biome are we flying to?",
+      "a1": "Beach",
+      "a1Type": "lazy",
+      "a1nextId": "id2",
+      "a2": "Jungle Biome",
+      "a2Type": "chaotic",
+      "a2nextId": "id7",
+      "a3": "Cherry Grove",
+      "a3Type": "feeling",
+      "a3nextId": "id12",
+      "a4": "Plains with basic oak, birch, and flowers!",
+      "a4Type": "basic",
+      "a4nextId": "id9"
+    },
+    {
+      "id": "id2",
+      "question": "Beach day!! What do you want to do?",
+      "a1": "Go fishing (like Animal Crossing XD)",
+      "a1Type": "productive",
+      "a1nextId": "id3",
+      "a2": "Make a boat and go to a distant land far far away",
+      "a2Type": "introversion",
+      "a2nextId": "id4",
+      "a3": "Let’s Play House",
+      "a3Type": "thinking",
+      "a3NextId": "id5"
+    },
+    {
+      "id": "id3",
+      "question": "GO FISH (get it??? Nevermind…) OMG we pulled a….",
+      "a1": "Bone",
+      "a1Type": "feeling",
+      "a1nextId": "id6",
+      "a2": "Salmon",
+      "a2Type": "basic",
+      "a2nextId": "id5",
+      "a3": "Enchanted Book",
+      "a3Type": "introversion",
+      "a3nextId": "id5",
+      "a4": "Saddle",
+      "a4Type": "thinking",
+      "a4nextId": "id13"
+    },
+    {
+      "id": "id4",
+      "question": "Cool cool! Where are you going?",
+      "a1": "Random!",
+      "a1Type": "feeling",
+      "a1nextId": "id7",
+      "a2": "Find Jungle",
+      "a2Type": "chaotic",
+      "a2nextId": "id7",
+      "a3": "Find plains",
+      "a3Type": "basic",
+      "a3nextId": "id9",
+      "a4": "Find Cherry Forest",
+      "a4Type": "feeling",
+      "a4nextId": "id12"
+    },
+    {
+      "id": "id5",
+      "question": "Yay making a house! What block are you making your house out of?",
+      "a1": "Sandstone",
+      "a1Type": "basic",
+      "a1nextId": "id11",
+      "a2": "Sand",
+      "a2Type": "lazy",
+      "a2nextId": "id11",
+      "a3": "Birch wood",
+      "a3Type": "productive",
+      "a3nextId": "id11"
+    },
+    {
+      "id": "id6",
+      "question": "So are you farming or hanging out with a wolf?",
+      "a1": "Farm farm!",
+      "a1Type": "productive",
+      "a1nextId": "id13",
+      "a2": "Wolf (woof woof)",
+      "a2Type": "feeling",
+      "a2nextId": "id16"
+    },
+    {
+      "id": "id7",
+      "question": "George of The Jungle! What’s the plan?",
+      "a1": "Build a tree house",
+      "a1Type": "extraversion",
+      "a1nextId": "id8",
+      "a2": "Clear some land, I'm afraid of heights",
+      "a2Type": "thinking",
+      "a2nextId": "id8",
+      "a3": "Find some parrots",
+      "a3Type": "feeling",
+      "a3nextId": "id17"
+    },
+    {
+      "id": "id8",
+      "question": "What do you want to make your house out of?",
+      "a1": "Jungle wood",
+      "a1Type": "lazy",
+      "a1nextId": "id11",
+      "a2": "Acacia",
+      "a2Type": "chaotic",
+      "a2nextId": "id8",
+      "a3": "Birch",
+      "a3Type": "basic",
+      "a3nextId": "id8",
+      "a4": "Cherry",
+      "a4Type": "feeling",
+      "a4nextId": "id8"
+    },
+    {
+      "id": "id9",
+      "question": "What to do?",
+      "a1": "Village!",
+      "a1Type": "extraversion",
+      "a1nextId": "id10",
+      "a2": "Build a house",
+      "a2Type": "productive",
+      "a2nextId": "id11",
+      "a3": "Adopt (abduct) a pet!",
+      "a3Type": "chaotic",
+      "a3nextId": "id15"
+    },
+    {
+      "id": "id10",
+      "question": "Village C"
+    },
+    {
+      "id": "id11",
+      "question": "What are you doing next in your house?",
+      "a1": "Make a farm",
+      "a1Type": "productive",
+      "a1nextId": "id13",
+      "a2": "Work on the interior",
+      "a2Type": "chaotic",
+      "a2nextId": "id14"
+    },
+    {
+      "id": "id12",
+      "question": "Cherry blossoms are pretty, and your house will be too! What are you making your house out of?",
+      "a1": "Cherry planks",
+      "a1Type": "productive",
+      "a1nextId": "id11",
+      "a2": "Cherry wood",
+      "a2Type": "lazy",
+      "a2nextId": "id11"
+    },
+    {
+      "id": "id13",
+      "question": "Farming part 1"
+    },
+    {
+      "id": "id14",
+      "question": "Interior part 1"
+    },
+    {
+      "id": "id15",
+      "question": "What pet do you want?",
+      "a1": "Parrot",
+      "a1Type": "extraversion",
+      "a1nextId": "id17",
+      "a2": "Wolf",
+      "a2Type": "introversion",
+      "a2nextId": "id16"
+    },
+    {
+      "id": "id16",
+      "question": "Wolf"
+    },
+    {
+      "id": "id17",
+      "question": "Parrot"
+    }
+  ]
+}
