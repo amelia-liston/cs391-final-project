@@ -1,8 +1,11 @@
-// import './App.css'
+import './App.css'
+
 import HomePreview from './components/pages/HomePreview';
 import SurvivalQuiz from "./components/pages/SurvivalQuiz.tsx";
 import CreativeQuiz from "./components/pages/CreativeQuiz.tsx";
+import QuizStart from './components/pages/QuizStart.tsx';
 import About from './components/pages/About';
+
 import { Route, Routes, createBrowserRouter, RouterProvider } from "react-router";
 import { styled } from "styled-components";
 
@@ -18,7 +21,10 @@ export function Root() {
       <>
            <Routes>
               <Route path={`/*`}
-                     element={<HomePreview />}
+                      element={<HomePreview />}
+              />
+              <Route path={`/QuizStart`}
+                      element={<QuizStart />}
               />
                <Route path={`/SurvivalQuiz`}
                       element={<SurvivalQuiz />}
