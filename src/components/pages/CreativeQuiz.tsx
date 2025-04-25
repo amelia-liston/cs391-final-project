@@ -1,6 +1,10 @@
 import {useState, useEffect} from 'react';
 // import creativeQuestions from "../creativeQuestions.json"
+import {CreativeTypes} from "../../../creativeTypes.tsx";
 
+// function getQuestion(data) {
+//
+// }
 
 export default function CreativeQuiz() {
     // ideas from MBTI
@@ -19,7 +23,7 @@ export default function CreativeQuiz() {
     // const [chaotic, setChaotic] = useState(0);
 
     // useState to display questions!
-    const [data, setData] = useState(null);
+    const [data, setData] = useState<CreativeTypes|null>(null);
     const [currId, setCurrId] = useState("id1");
 
     useEffect(() => {
@@ -32,24 +36,27 @@ export default function CreativeQuiz() {
                     console.error(`error: ${error}`);
                 })
         }
-        // const result = getData();
-        // setData(await result);
         fetching();
     }, []);
 
     if (data === null){
         console.log("Still setting data/loading!");
         // show loading component here?
-        return (<>
-                    <h2>Loading...</h2>
-                </>);
+        return (
+            <>
+                <h2>Loading...</h2>
+            </>
+        );
     }
     else {
         console.log("Data here!", data);
         // fully loaded data
-        return (<>
-                    <h2>There is data!</h2>
-                </>);
+
+        return (
+            <>
+                <h2>There is data!</h2>
+            </>
+        );
     }
 
 
