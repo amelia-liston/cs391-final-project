@@ -17,10 +17,10 @@ export default function About() {
                 <DisplayAll/>
                 <h2>About the Creators</h2>
                 <AllAvatarsDiv>
-                    <DisplayAvatar img="/amelia-avatar.png" name="Amelia" bio="CS girly pop"/>
-                    <DisplayAvatar img="/mia-avatar.png" name="Mia" bio="CS girly pop"/>
-                    <DisplayAvatar img="/kris-avatar.png" name="Kris" bio="CS girly pop"/>
-                    <DisplayAvatar img="/sophia-avatar.png" name="Sophia" bio="CS girly pop"/>
+                    <DisplayAvatar img="/amelia-avatar.png" name="Amelia" bio="Hey! I'm a CS major at BU, class of 2026. My favorite mob is an oceleot, and in the game I'm a builder."/>
+                    <DisplayAvatar img="/mia-avatar.png" name="Mia" bio="CS girly pop CS girly pop CS girly pop CS girly pop"/>
+                    <DisplayAvatar img="/kris-avatar.png" name="Kris" bio="Hey! I'm a CS major at BU, class of 2025. My favorite mob is an oceleot, and in the game I'm a miner."/>
+                    <DisplayAvatar img="/sophia-avatar.png" name="Sophia" bio="CS girly pop CS girly pop CS girly pop"/>
                 </AllAvatarsDiv>
             </main>
         </>

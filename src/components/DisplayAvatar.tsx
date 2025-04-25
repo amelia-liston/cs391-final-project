@@ -14,7 +14,7 @@ const StyledImage = styled.img`
 const OneAvatarDiv=styled.div`
     flex-direction: column;
     justify-content: center;
-    max-width: 100%;
+    max-width: 20%;
     text-align: center;
 `;
 
