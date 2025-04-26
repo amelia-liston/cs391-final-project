@@ -2,9 +2,9 @@ import {useState, useEffect} from 'react';
 // import creativeQuestions from "../creativeQuestions.json"
 import {CreativeTypes} from "../../../creativeTypes.tsx";
 
-// function getQuestion(data) {
-//
-// }
+function getQuestion(data:CreativeTypes[], currId: string) {
+    return data.find(t => t.id === currId);
+}
 
 export default function CreativeQuiz() {
     // ideas from MBTI
@@ -23,22 +23,24 @@ export default function CreativeQuiz() {
     // const [chaotic, setChaotic] = useState(0);
 
     // useState to display questions!
-    const [data, setData] = useState<CreativeTypes|null>(null);
+    const [data, setData] = useState<CreativeTypes[]|null>(null);
     const [currId, setCurrId] = useState("id1");
 
+    // get data and unnest it to put in data array
     useEffect(() => {
-        const fetching = async () => {
-            fetch('creativeQuestions.json')
-                .then(async (response) => {
-                    setData(await response.json());
-                })
-                .catch((error) => {
-                    console.error(`error: ${error}`);
-                })
+        async function fetching() {
+            try {
+                const res = await fetch("/creativeQuestions.json");
+                const newData: { creativeQuestions: CreativeTypes[] } = await res.json();
+                setData(newData.creativeQuestions);
+            } catch (err) {
+                console.error("Error!: ", err);
+            }
         }
         fetching();
     }, []);
 
+    // We have no data yet
     if (data === null){
         console.log("Still setting data/loading!");
         // show loading component here?
@@ -48,10 +50,15 @@ export default function CreativeQuiz() {
             </>
         );
     }
+    // data exists!
     else {
         console.log("Data here!", data);
         // fully loaded data
-
+        // console.log("Question: ", getQuestion(data));
+        const currQuestion = getQuestion(data, currId);
+        if (currQuestion !== null){
+            console.log("Current question: ", currQuestion);
+        }
         return (
             <>
                 <h2>There is data!</h2>
