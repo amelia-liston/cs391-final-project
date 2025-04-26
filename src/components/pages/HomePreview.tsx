@@ -26,7 +26,11 @@ const StyledYellowText = styled.img`
 
 export default function HomePreview() {
     const [text, setText] = useState('yellowText/1.svg');
-    const yellowText = ['yellowText/1.svg', 'yellowText/2.svg', 'yellowText/3.svg', 'yellowText/4.svg', 'yellowText/5.svg', 'yellowText/6.svg', 'yellowText/7.svg', 'yellowText/8.svg', 'yellowText/9.svg', 'yellowText/10.svg', 'yellowText/11.svg', 'yellowText/12.svg', 'yellowText/13.svg'];
+    const yellowText = ['yellowText/1.svg', 'yellowText/2.svg', 'yellowText/3.svg', 'yellowText/4.svg', 
+    'yellowText/5.svg', 'yellowText/6.svg', 'yellowText/7.svg', 'yellowText/8.svg', 'yellowText/9.svg', 
+    'yellowText/10.svg', 'yellowText/11.svg', 'yellowText/12.svg', 'yellowText/13.svg', 'yellowText/14.svg',
+    'yellowText/15.svg','yellowText/16.svg','yellowText/17.svg','yellowText/18.svg','yellowText/19.svg',
+    'yellowText/20.svg','yellowText/21.svg','yellowText/22.svg','yellowText/23.svg','yellowText/24.svg'];
 
     useEffect(() => {
         try {

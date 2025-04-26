@@ -37,6 +37,7 @@ body {
   font-size: 3rem;
   text-decoration: none;
   text-align: center;
+
   text-shadow: var(--dark-green) 0 .1em 0; 
   color: var(--text-color); 
   background-color: var(--primary-green);
@@ -44,8 +45,9 @@ body {
   
   width: 7em;
   padding: 0 2em;
-  padding-bottom: .3em;
+  padding-bottom: .3rem;
   border-radius: .1rem;
+  padding-top: .6rem;
 }
 
 .minecraft-button::before {
@@ -91,10 +93,15 @@ body {
 
 .minecraft-btn {
 	  font-family: 'Minecraftia';
+    text-decoration: none;
   	border-color: #AAA #565656 #565656 #AAA;
   	text-shadow: 3px 3px #4C4C4C;
   	outline: 1.5px solid #000;
     padding: .1rem 5rem;
+
+    /* added to keep the size larger */
+    font-size: 3rem;     
+    line-height: 1; 
 
     height: var(--btn-size);
     width: calc(var(--btn-size) * 10);
@@ -123,6 +130,15 @@ body {
     &:active {
       box-shadow: inset -2px -4px #0004, inset 2px 2px #FFF5;
     }
+}
+
+/* styling for the display component */
+
+
+.minecraft-options {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
 }
   
 .minecraft-btn:hover {

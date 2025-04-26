@@ -1,8 +1,10 @@
 import {useState, useEffect} from 'react';
 // import creativeQuestions from "../creativeQuestions.json"
 import {CreativeTypes} from "../../../creativeTypes.tsx";
+import DisplayQuestion from '../DisplayQuestion.tsx';
 
 function getQuestion(data:CreativeTypes[], currId: string) {
+    // returns the question with the answer attached
     return data.find(t => t.id === currId);
 }
 
@@ -51,6 +53,7 @@ export default function CreativeQuiz() {
         );
     }
     // data exists!
+    //maybe get rid of else? -mia
     else {
         console.log("Data here!", data);
         // fully loaded data
@@ -58,10 +61,27 @@ export default function CreativeQuiz() {
         const currQuestion = getQuestion(data, currId);
         if (currQuestion !== null){
             console.log("Current question: ", currQuestion);
+
+            //mia suggestion, no idea if itll work HEHE
+            
+
+
+
         }
         return (
+            // display component -mia
+            // pass in the questions and answers as props into the function -mia
+            //handle select of what the player chooses 
             <>
-                <h2>There is data!</h2>
+                {/* <h2>There is data!</h2> */}
+                <DisplayQuestion
+                    // question={currQuestion.question}
+                    // options = {options}
+                    // onSelect={handleSelect}
+                    question={"hiii"}
+                    options = {["hellooo","how are youdfghjklgfdsdf", "yippee","hiiiii"]}
+                    onSelect={2}
+                />
             </>
         );
     }
