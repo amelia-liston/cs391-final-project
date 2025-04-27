@@ -19,7 +19,7 @@ export type CreativeTypes = {
     a4nextId: string | null;
 }
 
-export type Option={
+export type Option = {
     text:string
     nextId: string
     type: string | null

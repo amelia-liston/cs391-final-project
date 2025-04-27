@@ -14,7 +14,7 @@ export default function CreativeQuiz() {
     // ideas from MBTI
     // group 1
     const [extraversion, setExtraversion] = useState(0);
-    const [introversion, setIntroversion] = useState(0);
+    const [introversion, setIntroversion] = useState(1);
     // group 2
     const [thinking, setThinking] = useState(0);
     const [feeling, setFeeling] = useState(0);
@@ -135,24 +135,31 @@ export default function CreativeQuiz() {
                         break
                     }
                     setCurrId(opt.nextId)
-
                 }
-                
-        return (
-            // display component -mia
-            // pass in the questions and answers as props into the function -mia
-            //handle select of what the player chooses 
-            <>
-                {/* <h2>There is data!</h2> */}
-                <DisplayQuestion
-                    
-                    question={currQuestion.question}
-                    //option array passed in 
-                    options = {options.map(o => o.text)}
-                    onSelect={handleSelect}
-                />
-            </>
-        );
+        // Finished quiz!
+        if (currId === "FINISHED"){
+            return (
+                <h2>Finished!</h2>
+            );
+        }
+        // Still doing quiz
+        else {
+            return (
+                // display component -mia
+                // pass in the questions and answers as props into the function -mia
+                //handle select of what the player chooses
+                <>
+                    {/* <h2>There is data!</h2> */}
+                    <DisplayQuestion
+
+                        question={currQuestion.question}
+                        //option array passed in
+                        options = {options.map(o => o.text)}
+                        onSelect={handleSelect}
+                    />
+                </>
+            );
+        }
     }
 
 
