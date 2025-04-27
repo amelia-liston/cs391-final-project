@@ -4,6 +4,9 @@ import styled from "styled-components"
 
 const StyledDiv = styled.div`
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;gap: 1rem;
 `;
 
 const StyledImg = styled.img`
@@ -14,7 +17,7 @@ const StyledImg = styled.img`
 const StyledYellowText = styled.img`
     max-width: 20%;
     position: absolute;
-    top: 35%;
+    top: 25%;
     left: 63%;
     rotate: -15deg;
     animation: grow-animation 4s infinite alternate;
@@ -55,7 +58,7 @@ export default function HomePreview() {
         <StyledYellowText src={text} alt={text} />
         <Link className="minecraft-button" to={`/QuizStart`}>Play</Link>
         {/* <button className="minecraft-btn mx-auto w-64 text-center text-white truncate p-1 border-2 border-b-4 hover:text-yellow-200">Click me!</button> */}
-
+        <Link className="minecraft-button" to={`/About`}>About</Link>
 
       </StyledDiv>
     )

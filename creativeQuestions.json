@@ -28,7 +28,7 @@
       "a2nextId": "id4",
       "a3": "Let’s Play House",
       "a3Type": "thinking",
-      "a3NextId": "id5"
+      "a3nextId": "id5"
     },
     {
       "id": "id3",
@@ -153,11 +153,26 @@
     },
     {
       "id": "id13",
-      "question": "Farming part 1"
+      "question": "YeeHaw! You spawn a horse and get to work on building a farm!",
+      "a1": "GreenHouse! (we are vegans DUH)",
+      "a1Type": "productive",
+      "a1nextId": "id14"
     },
     {
       "id": "id14",
-      "question": "Interior part 1"
+      "question": "Flaura and Fauna! But we need to build a house to accompany it :) What wood are we choosing?",
+      "a1": "Jungle Wood",
+      "a1Type": "extraversion",
+      "a1nextId": "id11",
+      "a2": "Cherry Wood",
+      "a2Type": "feeling",
+      "a2nextId": "id11",
+      "a3": "Birch Wood",
+      "a3Type": "basic",
+      "a3nextId": "id11",
+      "a4": "Acacia Wood",
+      "a4Type": "chaotic",
+      "a4nextId": "id11"
     },
     {
       "id": "id15",
