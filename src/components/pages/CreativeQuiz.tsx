@@ -1,10 +1,10 @@
 import {useState, useEffect} from 'react';
 // import creativeQuestions from "../creativeQuestions.json"
-import {CreativeTypes} from "../../../creativeTypes.tsx";
+import {QuizTypes} from "../../../quizTypes.tsx";
 import DisplayQuestion from '../DisplayQuestion.tsx';
-import {Option} from "../../../creativeTypes.tsx";
+import {Option} from "../../../quizTypes.tsx";
 
-function getQuestion(data:CreativeTypes[], currId: string) {
+function getQuestion(data:QuizTypes[], currId: string) {
     // returns the question with the answer attached
     return data.find(t => t.id === currId);
 }
@@ -27,7 +27,7 @@ export default function CreativeQuiz() {
     const [chaotic, setChaotic] = useState(0);
 
     // useState to display questions!
-    const [data, setData] = useState<CreativeTypes[]|null>(null);
+    const [data, setData] = useState<QuizTypes[]|null>(null);
     const [currId, setCurrId] = useState("id1");
 
     // get data and unnest it to put in data array
@@ -35,7 +35,7 @@ export default function CreativeQuiz() {
         async function fetching() {
             try {
                 const res = await fetch("/creativeQuestions.json");
-                const newData: { creativeQuestions: CreativeTypes[] } = await res.json();
+                const newData: { creativeQuestions: QuizTypes[] } = await res.json();
                 setData(newData.creativeQuestions);
             } catch (err) {
                 console.error("Error!: ", err);
