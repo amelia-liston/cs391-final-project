@@ -106,13 +106,13 @@
       "a1nextId": "id11",
       "a2": "Acacia",
       "a2Type": "chaotic",
-      "a2nextId": "id8",
+      "a2nextId": "id11",
       "a3": "Birch",
       "a3Type": "basic",
-      "a3nextId": "id8",
+      "a3nextId": "id11",
       "a4": "Cherry",
       "a4Type": "feeling",
-      "a4nextId": "id8"
+      "a4nextId": "id11"
     },
     {
       "id": "id9",
@@ -122,7 +122,7 @@
       "a1nextId": "id10",
       "a2": "Build a house",
       "a2Type": "productive",
-      "a2nextId": "id11",
+      "a2nextId": "id8",
       "a3": "Adopt (abduct) a pet!",
       "a3Type": "chaotic",
       "a3nextId": "id20"
@@ -131,7 +131,7 @@
       "id": "id10",
       "question": "Are we ready to change some lives! You make the place zombie proof and even spawn a couple of Golems are extra safety measures—very philanthropic. But lets think about you here…",
       "a1": "Lets build a home!",
-      "a1nextId": "id14"
+      "a1nextId": "id8"
     },
     {
       "id": "id11",
@@ -141,7 +141,7 @@
       "a1nextId": "id13",
       "a2": "Work on the interior",
       "a2Type": "chaotic",
-      "a2nextId": "id14"
+      "a2nextId": "id22"
     },
     {
       "id": "id12",
@@ -165,7 +165,7 @@
     },
     {
       "id": "id15",
-      "question": "We do need a companion! What creature are we thinking? \n",
+      "question": "We do need a companion! What creature are we thinking?",
       "a1": "Parrot",
       "a1Type": "extraversion",
       "a1nextId": "id17",
@@ -182,22 +182,30 @@
     {
       "id": "id16",
       "question": "Now who is a good boy! But its getting dark outside...",
-      "a1": "Time to go home :)"
+      "a1": "Time to go home :)",
+      "a1Type": "",
+      "a1nextId": "id24"
     },
     {
       "id": "id17",
       "question": "RRRRRR MATEY! But its getting dark outside…",
-      "a1": "Time to go home :)"
+      "a1": "Time to go home :)",
+      "a1Type": "",
+      "a1nextId": "id24"
     },
     {
       "id": "id18",
       "question": "Meow! But its getting dark outside...",
-      "a1": "Time to go home :)"
+      "a1": "Time to go home :)",
+      "a1Type": "",
+      "a1nextId": "id24"
     },
     {
       "id": "id19",
       "question": "Horse girl energy (NAYY) ! But its getting dark outside…",
-      "a1": "Time to go home :)"
+      "a1": "Time to go home :)",
+      "a1Type": "",
+      "a1nextId": "id24"
     },
     {
       "id": "id20",
@@ -219,67 +227,57 @@
       "id": "id21",
       "question": "Your buddy needs a home though...",
       "a1": "Lets build a home",
-      "a1nextId": "id14"
+      "a1nextId": "id8"
     },
     {
     "id": "id22",
     "question": "Time to make this house a home! What do we feel like the interior should look like?",
     "a1": "Practical, chests and a bed in the corner",
     "a1Type": "thinking",
-    "a1nextId": "",
+    "a1nextId": "id23",
     "a2": "Living room, bedroom, kitchen, chairs you can’t physically sit in!",
     "a2Type": "feeling",
-    "a2nextId": ""
+    "a2nextId": "id23"
   },
   {
     "id": "id23",
     "question": "Now that the inner workings of our house are in order, lets get to the exterior. Whats the plan?",
     "a1": "Get a pet + make them a home",
-    "a1Type": "",
+    "a1Type": "productive",
     "a1nextId": "id15",
     "a2": "I want to explore! (explora dora styleee)",
-    "a2Type": "",
-    "a2nextId": ""
+    "a2Type": "chaotic",
+    "a2nextId": "id24"
   },
   {
     "id": "id24",
     "question": "After a long day, the sky fades into that familiar orange hue, you are filled with happiness and accomplishment of the day you’ve had… ITS MORPHIN TIME",
     "a1": "Huh what???",
-    "a1Type": "",
+    "a1Type": "basic",
     "a1nextId": "id25",
     "a2": "Who have I been talking to this whole time…?",
-    "a2Type": "",
-    "a2nextId": "id27"
+    "a2Type": "chaotic",
+    "a2nextId": "id26"
   },
   {
     "id": "id25",
     "question": "Ok calm down with the excitement there champ! The team and I have been conducting real analysis on your personality and think you would really appreciate a new look that coincides with your aura",
     "a1": "Ugh fine give it to me",
-    "a1Type": "",
-    "a1nextId": "id26",
+    "a1Type": "introversion",
+    "a1nextId": "FINISHED",
     "a2": "Ohhhhh cool!",
-    "a2Type": "",
-    "a2nextId": "id26"
-  },
-  {
-    "id": "id27",
-    "question": "Hi there! Im one of the creators of this game :P call me god or whatever (god is a womannnnn - Ariana Grande) But let’s get back to the hero of this story: YOU! Dont you wanna know what happens next?",
-    "a1": "Ugh fine give it to me",
-    "a1Type": "",
-    "a1nextId": "id26",
-    "a2": "Ohhhhh cool!",
-    "a2Type": "",
-    "a2nextId": "id26"
+    "a2Type": "extraversion",
+    "a2nextId": "FINISHED"
   },
   {
     "id": "id26",
-    "question": "Ok calm down with the excitement there champ! The team and I have been conducting real analysis on your personality and think you would really appreciate a new look that coincides with your aura",
-    "a1": "Ugh fine give it to me",
-    "a1Type": "",
-    "a1nextId": "FINISHED",
-    "a2": "Ohhhhh cool!",
-    "a2Type": "",
-    "a2nextId": "FINISHED"
+    "question": "Hi there! Im one of the creators of this game :P call me god or whatever (god is a womannnnn - Ariana Grande) But let’s get back to the hero of this story: YOU! Dont you wanna know what happens next?",
+    "a1": "Ugh sure",
+    "a1Type": "introversion",
+    "a1nextId": "id25",
+    "a2": "Yesss",
+    "a2Type": "extraversion",
+    "a2nextId": "id25"
   }
   ]
 }
