@@ -91,7 +91,7 @@
       "a1": "Build a tree house",
       "a1Type": "extraversion",
       "a1nextId": "id8",
-      "a2": "Clear some land, I'm afraid of heights",
+      "a2": "Clear some land, I am afraid of heights",
       "a2Type": "thinking",
       "a2nextId": "id8",
       "a3": "Find some parrots",
@@ -125,11 +125,13 @@
       "a2nextId": "id11",
       "a3": "Adopt (abduct) a pet!",
       "a3Type": "chaotic",
-      "a3nextId": "id15"
+      "a3nextId": "id20"
     },
     {
       "id": "id10",
-      "question": "Village C"
+      "question": "Are we ready to change some lives! You make the place zombie proof and even spawn a couple of Golems are extra safety measures—very philanthropic. But lets think about you here…",
+      "a1": "Lets build a home!",
+      "a1nextId": "id14"
     },
     {
       "id": "id11",
@@ -156,41 +158,128 @@
       "question": "YeeHaw! You spawn a horse and get to work on building a farm!",
       "a1": "GreenHouse! (we are vegans DUH)",
       "a1Type": "productive",
-      "a1nextId": "id14"
-    },
-    {
-      "id": "id14",
-      "question": "Flaura and Fauna! But we need to build a house to accompany it :) What wood are we choosing?",
-      "a1": "Jungle Wood",
-      "a1Type": "extraversion",
-      "a1nextId": "id11",
-      "a2": "Cherry Wood",
-      "a2Type": "feeling",
-      "a2nextId": "id11",
-      "a3": "Birch Wood",
-      "a3Type": "basic",
-      "a3nextId": "id11",
-      "a4": "Acacia Wood",
-      "a4Type": "chaotic",
-      "a4nextId": "id11"
+      "a1nextId": "id22",
+      "a2": "Barn house! (look the other way...)",
+      "a2Type": "",
+      "a2nextId": "id22"
     },
     {
       "id": "id15",
-      "question": "What pet do you want?",
+      "question": "We do need a companion! What creature are we thinking? \n",
       "a1": "Parrot",
       "a1Type": "extraversion",
       "a1nextId": "id17",
       "a2": "Wolf",
       "a2Type": "introversion",
-      "a2nextId": "id16"
+      "a2nextId": "id16",
+      "a3": "Cat",
+      "a3Type": "lazy",
+      "a3nextId": "id18",
+      "a4": "Horse",
+      "a4Type": "productive",
+      "a4nextId": "id19"
     },
     {
       "id": "id16",
-      "question": "Wolf"
+      "question": "Now who is a good boy! But its getting dark outside...",
+      "a1": "Time to go home :)"
     },
     {
       "id": "id17",
-      "question": "Parrot"
-    }
+      "question": "RRRRRR MATEY! But its getting dark outside…",
+      "a1": "Time to go home :)"
+    },
+    {
+      "id": "id18",
+      "question": "Meow! But its getting dark outside...",
+      "a1": "Time to go home :)"
+    },
+    {
+      "id": "id19",
+      "question": "Horse girl energy (NAYY) ! But its getting dark outside…",
+      "a1": "Time to go home :)"
+    },
+    {
+      "id": "id20",
+      "question": "Look at all these eggs to choose from, which mob suits you?",
+      "a1": "Axolotls",
+      "a1Type": "",
+      "a1nextId": "id21",
+      "a2": "Fox",
+      "a2Type": "",
+      "a2nextId": "id21",
+      "a3": "Llama",
+      "a3Type": "",
+      "a3nextId": "id21",
+      "a4": "Fish (low maintenance)",
+      "a4Type": "lazy",
+      "a4nextId": "id21"
+    },
+    {
+      "id": "id21",
+      "question": "Your buddy needs a home though...",
+      "a1": "Lets build a home",
+      "a1nextId": "id14"
+    },
+    {
+    "id": "id22",
+    "question": "Time to make this house a home! What do we feel like the interior should look like?",
+    "a1": "Practical, chests and a bed in the corner",
+    "a1Type": "thinking",
+    "a1nextId": "",
+    "a2": "Living room, bedroom, kitchen, chairs you can’t physically sit in!",
+    "a2Type": "feeling",
+    "a2nextId": ""
+  },
+  {
+    "id": "id23",
+    "question": "Now that the inner workings of our house are in order, lets get to the exterior. Whats the plan?",
+    "a1": "Get a pet + make them a home",
+    "a1Type": "",
+    "a1nextId": "id15",
+    "a2": "I want to explore! (explora dora styleee)",
+    "a2Type": "",
+    "a2nextId": ""
+  },
+  {
+    "id": "id24",
+    "question": "After a long day, the sky fades into that familiar orange hue, you are filled with happiness and accomplishment of the day you’ve had… ITS MORPHIN TIME",
+    "a1": "Huh what???",
+    "a1Type": "",
+    "a1nextId": "id25",
+    "a2": "Who have I been talking to this whole time…?",
+    "a2Type": "",
+    "a2nextId": "id27"
+  },
+  {
+    "id": "id25",
+    "question": "Ok calm down with the excitement there champ! The team and I have been conducting real analysis on your personality and think you would really appreciate a new look that coincides with your aura",
+    "a1": "Ugh fine give it to me",
+    "a1Type": "",
+    "a1nextId": "id26",
+    "a2": "Ohhhhh cool!",
+    "a2Type": "",
+    "a2nextId": "id26"
+  },
+  {
+    "id": "id27",
+    "question": "Hi there! Im one of the creators of this game :P call me god or whatever (god is a womannnnn - Ariana Grande) But let’s get back to the hero of this story: YOU! Dont you wanna know what happens next?",
+    "a1": "Ugh fine give it to me",
+    "a1Type": "",
+    "a1nextId": "id26",
+    "a2": "Ohhhhh cool!",
+    "a2Type": "",
+    "a2nextId": "id26"
+  },
+  {
+    "id": "id26",
+    "question": "Ok calm down with the excitement there champ! The team and I have been conducting real analysis on your personality and think you would really appreciate a new look that coincides with your aura",
+    "a1": "Ugh fine give it to me",
+    "a1Type": "",
+    "a1nextId": "FINISHED",
+    "a2": "Ohhhhh cool!",
+    "a2Type": "",
+    "a2nextId": "FINISHED"
+  }
   ]
 }
