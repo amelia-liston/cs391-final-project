@@ -20,6 +20,7 @@
   100% {transform: scale(1); }
 }
 
+
 *,
 *::before,
 *::after {
@@ -84,6 +85,14 @@ body {
 }
 
 /* SURV CREATE BUTTON + QUIZ BUTTONS */
+/* the about font */
+.about{
+  color: var(--text-color); 
+  font-family: 'Minecraft', sans-serif;
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
 
 
 @font-face {

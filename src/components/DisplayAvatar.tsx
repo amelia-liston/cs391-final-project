@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import "/src/index.css";
+
 
 type AvatarProps = {
     name: string;
@@ -23,8 +25,8 @@ export default function DisplayAvatar({ name, img, bio }: AvatarProps) {
         <>
             <OneAvatarDiv>
                 <StyledImage src={img} alt={`${name}'s Avatar`} />
-                <h3>{name}</h3>
-                <h4>{bio}</h4>
+                <h3 className="about">{name}</h3>
+                <h4 className="about">{bio}</h4>
             </OneAvatarDiv>
 
         </>
