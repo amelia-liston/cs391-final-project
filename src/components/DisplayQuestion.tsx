@@ -6,27 +6,29 @@
 import styled from 'styled-components'
 import "/src/index.css";
 
-// dirt box div
+
 export const QuizWrapper = styled.div`
 
-  width: 65vw;
-  height: 65vh;
-  // background: url('/backgrounds/dirtBackground.jpg') top center;
+  width: 60%;
+  height: 90%;
+  margin: auto;
+  padding: 5% 2%;
+  //background: url('/backgrounds/dirtBackground.jpg') top center;
   display: flex;
   align-items: center;
   justify-content: center;
 
   box-sizing: border-box;
 `;
-//the metal box inside dirt div
+//the metal box inside outer div
 const Panel = styled.div`
     background: #3d3d3d;
     border: 4px solid #1f1f1f;
     padding: 3rem;
 
 
-    width: 80%;
-    // height: 100%;
+    width: 100%;
+    height: 40%;
 
     
     box-shadow: inset -2px -2px #2a2a2a,
