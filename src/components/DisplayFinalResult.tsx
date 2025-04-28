@@ -1,10 +1,14 @@
+// Sophia's component!
+
 import {Link} from "react-router";
 import styled from "styled-components";
 
+// props for taking in the card string from the creativeQuiz/survivalQuiz.tsx
 interface DisplayProps {
     card: string
 }
 
+// Creating a background wrapper so that the text is more seperated from actual background
 export const DirtWrapper = styled.div`
   background: url('/backgrounds/dirtBackground.jpg') top center;
   display: flex;
@@ -17,6 +21,7 @@ export const DirtWrapper = styled.div`
   padding: 2% 1%;
 `;
 
+// styled div to center items and have them in a column!
 const StyledDiv = styled.div`
     text-align: center;
     align-items: center;
@@ -24,16 +29,19 @@ const StyledDiv = styled.div`
     flex-direction: column;
 `;
 
+// make sure image is not too big/is centered
 const StyledImage = styled.img`
     max-width: 50%;
     margin: auto;
 `;
 
+// give button some extra margin space
 const StyledLink = styled(Link)`
     margin: 2% auto auto;
     text-align: center;
 `;
 
+// have text be minecraft text style!
 const CenterH = styled.h1`
     text-align: center;
     color: var(--text-color); 
@@ -42,6 +50,8 @@ const CenterH = styled.h1`
     font-weight: lighter;
 `;
 
+// This function takes the card combo string, finds the correct card image from src,
+// and outputs an object comprising an image and its corresponding alt string
 function cardSelect(card: string) {
     // ILBT
     // ILBF
@@ -146,13 +156,16 @@ function cardSelect(card: string) {
         alt = 'Problem'
     }
 
+    // return object with img and alt!
     return {img, alt}
-    // return img
 }
 
 export default function DisplayFinalResult({card}:DisplayProps) {
+    // call above function to get correct image and alt as an object
     let finalCard = cardSelect(card);
 
+    // if the image is problem, there was an error in processing
+    // this should never happen, but error checking is important!
     if (finalCard.img === "problem") {
         return (
             <>
@@ -160,9 +173,10 @@ export default function DisplayFinalResult({card}:DisplayProps) {
             </>
         );
     }
+    // Return a component with the card string and the actual card!
+    // added functionality to allow download of the card image; took inspiration from
     // https://stackoverflow.com/questions/50694881/how-to-download-file-in-react-js
-    // can use <Link to="/files/myfile.pdf" target="_blank" download>Download</Link> to download files
-    // where Where /files/myfile.pdf is inside your public folder.
+
     else {
         return (
             <>

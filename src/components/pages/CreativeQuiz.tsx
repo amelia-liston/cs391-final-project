@@ -1,19 +1,25 @@
+// Mia/Sophia component!
+
 import {useState, useEffect} from 'react';
-// import creativeQuestions from "../creativeQuestions.json"
 import {QuizTypes} from "../../../quizTypes.tsx";
+// Option
 import DisplayQuestion from '../DisplayQuestion.tsx';
-import {Option} from "../../../quizTypes.tsx";
 import CardMath from '../CardMath.tsx';
 import DisplayFinalResult from "../DisplayFinalResult.tsx";
+import OptArrayCreate from "../OptArrayCreate.tsx";
 
+// Sophia: this function takes in the quiz type array and currId and returns the question
+// associated with the currId
+// allows for functionality to grab specific questions based on nextId (in quizTypes)!
 function getQuestion(data:QuizTypes[], currId: string) {
     // returns the question with the answer attached
     return data.find(t => t.id === currId);
 }
 
-
+// main tsx function
 export default function CreativeQuiz() {
-    // ideas from MBTI
+    // ideas from MBTI for quiz question groups
+
     // group 1
     const [extraversion, setExtraversion] = useState(0);
     const [introversion, setIntroversion] = useState(1);
@@ -30,6 +36,7 @@ export default function CreativeQuiz() {
 
     // useState to display questions!
     const [data, setData] = useState<QuizTypes[]|null>(null);
+    // useState to get/set currId, start at first id which is always id1
     const [currId, setCurrId] = useState("id1");
 
     // get data and unnest it to put in data array
@@ -37,16 +44,20 @@ export default function CreativeQuiz() {
         async function fetching() {
             try {
                 const res = await fetch("/creativeQuestions.json");
+                // this line below unnests the data; because data is in a json, the format
+                // is known, so the code is being told the format here
                 const newData: { creativeQuestions: QuizTypes[] } = await res.json();
+                // now it is possible to unnest the data and just get the quizType array!
                 setData(newData.creativeQuestions);
             } catch (err) {
                 console.error("Error!: ", err);
             }
         }
+        // runs the above function
         fetching();
     }, []);
 
-    // There is no data loaded yet
+    // There is no data loaded yet, so show a loading screen
     if (data === null){
         console.log("Still setting data/loading!");
         // show loading component here?
@@ -59,47 +70,20 @@ export default function CreativeQuiz() {
     }
     // data exists!- can do quiz!
     else {
-        console.log("Data here!", data);
-
+        // uses currId and data (QuizType array) to get the next question, function at top
         const currQuestion = getQuestion(data, currId);
-        // error checking here!
 
         // if the question exists, build the display
         if (currQuestion) {
             //building an options array 
             // this ensures if there are less than 4 options it will be ok on the next component!
-            const options: Option[] = []
-            if (currQuestion.a1 && currQuestion.a1nextId) {
-                options.push({
-                    text: currQuestion.a1,
-                    nextId: currQuestion.a1nextId,
-                    type: currQuestion.a1Type,
-                })
-            }
-            if (currQuestion.a2 && currQuestion.a2nextId) {
-                options.push({
-                    text: currQuestion.a2,
-                    nextId: currQuestion.a2nextId,
-                    type: currQuestion.a2Type,
-                })
-            }
-            if (currQuestion.a3 && currQuestion.a3nextId) {
-                options.push({
-                    text: currQuestion.a3,
-                    nextId: currQuestion.a3nextId,
-                    type: currQuestion.a3Type,
-                })
-            }
-            if (currQuestion.a4 && currQuestion.a4nextId) {
-                options.push({
-                    text: currQuestion.a4,
-                    nextId: currQuestion.a4nextId,
-                    type: currQuestion.a4Type,
-                })
-            }
+            // const options: Option[] = []
+            // this was moved to a function as both creative quiz and survival quiz use these
+            const options = OptArrayCreate(currQuestion);
 
-            //go to next question
-            //makes the quiz show the next question
+            // go to next question
+            // makes the quiz show the next question
+            // also increments the question group associated with the selected answer
             const handleSelect = (idx: number) => {
                 const opt = options [idx]
                 if (!opt) return
@@ -132,6 +116,7 @@ export default function CreativeQuiz() {
                         //not type so nothing incrememented :)
                         break
                 }
+                // set nextId for next question!
                 setCurrId(opt.nextId)
             }
 
@@ -152,13 +137,20 @@ export default function CreativeQuiz() {
         }
         // quiz is finished, load their character that they've earned!
         else if (currId === "FINISHED") {
+            // will return a string in the form "IPCT"
             let Card = CardMath(introversion,extraversion,lazy,productive,basic,chaotic, thinking, feeling);
-            console.log(Card);
+
+            // display final result component: Sophia
+            // This takes in the Card (string) as an object prop
             return (
+
                 <DisplayFinalResult card={Card}/>
             );
         }
-        // No question here; error checking
+
+        // At this point there is question;
+        // There was some bug in the process: error checking
+        // this line should never run if json is formatted well
         else {
             return <h2>"Current question not found!"</h2>;
         }
