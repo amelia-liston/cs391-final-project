@@ -11,13 +11,13 @@ interface DisplayProps {
 // Creating a background wrapper so that the text is more seperated from actual background
 export const DirtWrapper = styled.div`
   background: url('/backgrounds/dirtBackground.jpg');
-  background-size: cover;
+  //background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  width: 100%;
-  height: 100%;
+  width: 60%;
+  height: 40%;
   margin: auto;
   padding: 2% 1%;
 `;
@@ -41,7 +41,6 @@ const StyledLink = styled(Link)`
     // margin: 2% auto auto;
     margin: 1vw 0 2vw 0;
     text-align: center;
-    
 `;
 
 // have text be minecraft text style!
@@ -193,7 +192,7 @@ export default function DisplayFinalResult({card}:DisplayProps) {
                         </StyledDiv>
                     </DirtWrapper>
                     <StyledLink className="minecraft-button" to={finalCard.img} target="_blank" download>Download</StyledLink>
-                    <StyledLink className="minecraft-button" to={'/QuizStart'}>Take it again?</StyledLink>
+                    {/*<StyledLink className="minecraft-button" to={'/QuizStart'}>Take it again?</StyledLink>*/}
                 </StyledDiv>
             </>
         );
