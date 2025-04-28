@@ -10,13 +10,14 @@ interface DisplayProps {
 
 // Creating a background wrapper so that the text is more seperated from actual background
 export const DirtWrapper = styled.div`
-//   background: url('/backgrounds/dirtBackground.jpg') top center;
+  background: url('/backgrounds/dirtBackground.jpg');
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  width: 60%;
-  height: 40%;
+  width: 100%;
+  height: 100%;
   margin: auto;
   padding: 2% 1%;
 `;
