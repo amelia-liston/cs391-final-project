@@ -6,29 +6,27 @@
 import styled from 'styled-components'
 import "/src/index.css";
 
-
+// dirt box div
 export const QuizWrapper = styled.div`
 
-  width: 60%;
-  height: 90%;
-  margin: auto;
-  padding: 5% 2%;
-  //background: url('/backgrounds/dirtBackground.jpg') top center;
+  width: 65vw;
+  height: 65vh;
+  // background: url('/backgrounds/dirtBackground.jpg') top center;
   display: flex;
   align-items: center;
   justify-content: center;
 
   box-sizing: border-box;
 `;
-//the metal box inside outer div
+//the metal box inside dirt div
 const Panel = styled.div`
     background: #3d3d3d;
     border: 4px solid #1f1f1f;
     padding: 3rem;
 
 
-    width: 100%;
-    height: 40%;
+    width: 80%;
+    // height: 100%;
 
     
     box-shadow: inset -2px -2px #2a2a2a,
@@ -119,7 +117,9 @@ export default function DisplayQuestion({
     <QuizWrapper>
       <Panel>
         <QuestionBox>{question}</QuestionBox>
-        {/*  */}
+        {/* options is an array, .map() loops ever the array opt is the element and i is the index */}
+        {/* for each iteration, returns a OptionBtn div */}
+        {/* when option clicked, you call handleSelection which moves to the next question + adds 1 to type associated */}
         <OptionsGrid>
           {options.map((opt, i) => (
             <OptionBtn key={i} onClick={() => onSelect(i)}>
