@@ -3,6 +3,7 @@ import {useState, useEffect} from 'react';
 import {QuizTypes} from "../../../quizTypes.tsx";
 import DisplayQuestion from '../DisplayQuestion.tsx';
 import {Option} from "../../../quizTypes.tsx";
+import CardMath from '../CardMath.tsx';
 
 function getQuestion(data:QuizTypes[], currId: string) {
     // returns the question with the answer attached
@@ -13,8 +14,8 @@ function getQuestion(data:QuizTypes[], currId: string) {
 export default function CreativeQuiz() {
     // ideas from MBTI
     // group 1
-    const [extraversion, setExtraversion] = useState(0);
-    const [introversion, setIntroversion] = useState(1);
+    const [extraversion, setExtraversion] = useState(1);
+    const [introversion, setIntroversion] = useState(0);
     // group 2
     const [thinking, setThinking] = useState(0);
     const [feeling, setFeeling] = useState(0);
@@ -150,8 +151,10 @@ export default function CreativeQuiz() {
         }
         // quiz is finished, load their character that they've earned!
         else if (currId === "FINISHED") {
+            let Card = CardMath(introversion,extraversion,lazy,productive,basic,chaotic, thinking, feeling);
+            // will return a strinf in the form "IPCT"
             return (
-                <h2>Finished quiz</h2>
+                Card
             );
         }
         // No question here; error checking

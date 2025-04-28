@@ -3,6 +3,7 @@ import {useState, useEffect} from 'react';
 import {QuizTypes} from "../../../quizTypes.tsx";
 import DisplayQuestion from '../DisplayQuestion.tsx';
 import {Option} from "../../../quizTypes.tsx";
+import CardMath from '../CardMath.tsx';
 
 function getQuestion(data:QuizTypes[], currId: string) {
     // returns the question with the answer attached
@@ -150,8 +151,9 @@ export default function CreativeQuiz() {
         }
         // quiz is finished, load their character that they've earned!
         else if (currId === "FINISHED") {
+            let Card = CardMath(introversion,extraversion,lazy,productive,basic,chaotic, thinking, feeling);
             return (
-                <h2>Finished quiz</h2>
+                Card
             );
         }
         // No question here; error checking

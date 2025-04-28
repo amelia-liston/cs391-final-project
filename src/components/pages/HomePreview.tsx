@@ -7,11 +7,13 @@ const StyledDiv = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;gap: 1rem;
+    
 `;
 
 const StyledImg = styled.img`
     max-width: 50%;
     margin-bottom: 2vw;
+    
 `;
 
 const StyledYellowText = styled.img`

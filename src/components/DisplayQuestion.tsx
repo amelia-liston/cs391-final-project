@@ -45,6 +45,9 @@ const QuestionBox = styled.div`
   padding: 1rem;
   margin-bottom: 1.5rem;
   text-align: center;
+
+  font-size: clamp(0.3rem, 1.5vw, 1.3rem);
+
   
 `
 
