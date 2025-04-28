@@ -6,42 +6,41 @@
 import styled from 'styled-components'
 import "/src/index.css";
 
-// dirt div
+// dirt box div
 export const QuizWrapper = styled.div`
 
-  width: 65vw;
-  height: 65vh;
+  width: 60%;
+  height: 90%;
+  margin: auto;
+  padding: 5% 2%;
   background: url('/backgrounds/dirtBackground.jpg') top center;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  
-
   box-sizing: border-box;
-`
-//the metal box
+`;
+//the metal box inside dirt div
 const Panel = styled.div`
     background: #3d3d3d;
     border: 4px solid #1f1f1f;
     padding: 3rem;
-    border-radius: 6px;
-    max-width: auto;
-    width: 40vw;
-    min-width: 20rem;
+
+
+    width: 80%;
+    height: 40%;
+
     
-
-
     box-shadow: inset -2px -2px #2a2a2a,
                 inset 2px  2px #4a4a4a;
-`
+`;
 
 const QuestionBox = styled.div`
   background: #2a2a2a;
   border: 2px solid #7f7f7f;
   color: #eee;
   font-family: 'Minecraftia', sans-serif;
-  font-size: 2rem;
+
   padding: 1rem;
   margin-bottom: 1.5rem;
   text-align: center;
@@ -49,25 +48,25 @@ const QuestionBox = styled.div`
   font-size: clamp(0.3rem, 1.5vw, 1.3rem);
 
   
-`
+`;
 
 const OptionsGrid = styled.div`
   display: grid;
-    width: 100%
+  width: 100%;
     
   grid-template-columns: repeat(1, max-content);
   gap: 0.75rem;
   justify-content: center;
-  width: auto
+
   display: inline-block;
-`
+`;
 
 const OptionBtn = styled.button`
 
 
     font-family: 'Minecraftia', sans-serif;
     // dynamic font size!
-    font-size: clamp(0.3rem, 1.5vw, 1.3rem);
+    font-size: clamp(0.3rem, 1.5vw, 1.5rem);
     text-decoration: none;
   	border-color: #AAA #565656 #565656 #AAA;
   	text-shadow: 3px 3px #4C4C4C;
@@ -75,22 +74,19 @@ const OptionBtn = styled.button`
     
     
     cursor: pointer;
-    overflow: hidden;
-    white-space: nowrap;
-    user-select: none;
+    
 
     background: #999 url('https://i.ibb.co/rb2TWXL/bgbtn.png') center / cover;
     image-rendering: pixelated;
     border: 2px solid #000;
 
-    max-width: 100%; 
-    width: 100%
+
+    width: 100%;
     height: 100%;
     padding: 0.8rem 1.5rem;
     color: #DDD ;
     text-shadow: 2px 2px #000A;
     box-shadow: inset -2px -4px #0006, inset 2px 2px #FFF7;
-
 
     &:hover {
         background-image: none;                    
@@ -101,7 +97,7 @@ const OptionBtn = styled.button`
     &:active {
       box-shadow: inset -2px -4px #0004, inset 2px 2px #FFF5;
     }
-`
+`;
 
 //props
 interface Props {
@@ -120,6 +116,7 @@ export default function DisplayQuestion({
     <QuizWrapper>
       <Panel>
         <QuestionBox>{question}</QuestionBox>
+        {/*  */}
         <OptionsGrid>
           {options.map((opt, i) => (
             <OptionBtn key={i} onClick={() => onSelect(i)}>
