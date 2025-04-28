@@ -10,7 +10,7 @@ interface DisplayProps {
 
 // Creating a background wrapper so that the text is more seperated from actual background
 export const DirtWrapper = styled.div`
-  background: url('/backgrounds/dirtBackground.jpg') top center;
+//   background: url('/backgrounds/dirtBackground.jpg') top center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,8 +37,10 @@ const StyledImage = styled.img`
 
 // give button some extra margin space
 const StyledLink = styled(Link)`
-    margin: 2% auto auto;
+    // margin: 2% auto auto;
+    margin: 1vw 0 2vw 0;
     text-align: center;
+    
 `;
 
 // have text be minecraft text style!
@@ -48,6 +50,7 @@ const CenterH = styled.h1`
     font-family: 'Minecraft', sans-serif;
     font-size: 3rem;
     font-weight: lighter;
+    margin: 1vw;
 `;
 
 // This function takes the card combo string, finds the correct card image from src,
@@ -189,6 +192,7 @@ export default function DisplayFinalResult({card}:DisplayProps) {
                         </StyledDiv>
                     </DirtWrapper>
                     <StyledLink className="minecraft-button" to={finalCard.img} target="_blank" download>Download</StyledLink>
+                    <StyledLink className="minecraft-button" to={'/QuizStart'}>Take it again?</StyledLink>
                 </StyledDiv>
             </>
         );

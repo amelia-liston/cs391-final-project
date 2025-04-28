@@ -11,7 +11,7 @@ export const QuizWrapper = styled.div`
 
   width: 65vw;
   height: 65vh;
-  background: url('/backgrounds/dirtBackground.jpg') top center;
+  // background: url('/backgrounds/dirtBackground.jpg') top center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,7 +76,7 @@ const OptionBtn = styled.button`
     
     cursor: pointer;
     overflow: hidden;
-    white-space: nowrap;
+    // white-space: nowrap;
     user-select: none;
 
     background: #999 url('https://i.ibb.co/rb2TWXL/bgbtn.png') center / cover;

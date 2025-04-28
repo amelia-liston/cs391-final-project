@@ -45,10 +45,11 @@ body {
   position: relative;
   
   width: 7em;
-  padding: 0 2em;
-  padding-bottom: .3rem;
+  /* padding: 0 2em; */
+  padding-bottom: .9rem;
   border-radius: .1rem;
-  padding-top: .6rem;
+  /* padding-top: .6rem; */
+  margin-bottom: 0.5rem;
 }
 
 .minecraft-button::before {
@@ -91,6 +92,7 @@ body {
   font-family: 'Minecraft', sans-serif;
   font-size: 2rem;
   font-weight: lighter;
+  text-align: center;
 }
 
 
