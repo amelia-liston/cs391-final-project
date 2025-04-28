@@ -140,7 +140,7 @@ export default function CreativeQuiz() {
             // will return a string in the form "IPCT"
             let Card = CardMath(introversion,extraversion,lazy,productive,basic,chaotic, thinking, feeling);
 
-            // display final result component- Sophia
+            // display final result component: Sophia
             // This takes in the Card (string) as an object prop
             return (
                 <DisplayFinalResult card={Card}/>
