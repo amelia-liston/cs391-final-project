@@ -26,7 +26,7 @@ const Panel = styled.div`
 
 
     width: 80%;
-    height: 40%;
+    // height: 100%;
 
     
     box-shadow: inset -2px -2px #2a2a2a,
@@ -85,6 +85,7 @@ const OptionBtn = styled.button`
     height: 100%;
     padding: 0.8rem 1.5rem;
     color: #DDD ;
+    margin: 0.5vw;
     text-shadow: 2px 2px #000A;
     box-shadow: inset -2px -4px #0006, inset 2px 2px #FFF7;
 
