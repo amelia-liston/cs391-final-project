@@ -4,11 +4,18 @@ const StyledImage = styled.img`
     max-width: 19%;
     margin: 1vh 2vw;
 `;
+
+/* Style by Kristine Peters */
+const StyledDiv = styled.div`
+    justify-content: center;
+    text-align: center;
+`;
+
 // maybe create the viewing as a scrowling module instead of all of them on one screen at once
 export default function DisplayAll() {
     return(
         <>
-            <div>
+            <StyledDiv>
                 <StyledImage src={"/Axolotl.png"} alt="Axolotl Card"/>
                 <StyledImage src={"/Baby Zombie.png"} alt="Baby Zombie Card"/>
                 <StyledImage src={"/Bee.png"} alt="Bee Card"/>
@@ -20,7 +27,7 @@ export default function DisplayAll() {
                 <StyledImage src={"/Turtle.png"} alt="Turtle Card"/>
                 <StyledImage src={"/Wolf.png"} alt="Wolf Card"/>
                 <StyledImage src={"/STEVE.png"} alt="Steve Card"/>
-            </div>
+            </StyledDiv>
         </>
     );
 }
