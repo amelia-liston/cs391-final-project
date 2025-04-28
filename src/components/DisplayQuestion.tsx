@@ -6,12 +6,14 @@
 import styled from 'styled-components'
 import "/src/index.css";
 
-// dirt box div
+
 export const QuizWrapper = styled.div`
 
-  width: 65vw;
-  height: 65vh;
-  // background: url('/backgrounds/dirtBackground.jpg') top center;
+  width: 60%;
+  height: 90%;
+  margin: auto;
+  padding: 5% 2%;
+  //background: url('/backgrounds/dirtBackground.jpg') top center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,8 +27,8 @@ const Panel = styled.div`
     padding: 3rem;
 
 
-    width: 80%;
-    // height: 100%;
+    width: 100%;
+    height: 40%;
 
     
     box-shadow: inset -2px -2px #2a2a2a,
