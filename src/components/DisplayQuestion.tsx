@@ -20,7 +20,7 @@ export const QuizWrapper = styled.div`
 
   box-sizing: border-box;
 `;
-//the metal box inside dirt div
+//the metal box inside outer div
 const Panel = styled.div`
     background: #3d3d3d;
     border: 4px solid #1f1f1f;
