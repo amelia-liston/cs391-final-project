@@ -4,6 +4,7 @@ import {QuizTypes} from "../../../quizTypes.tsx";
 import DisplayQuestion from '../DisplayQuestion.tsx';
 import {Option} from "../../../quizTypes.tsx";
 import CardMath from '../CardMath.tsx';
+import DisplayFinalResult from "../DisplayFinalResult.tsx";
 
 function getQuestion(data:QuizTypes[], currId: string) {
     // returns the question with the answer attached
@@ -152,8 +153,9 @@ export default function CreativeQuiz() {
         // quiz is finished, load their character that they've earned!
         else if (currId === "FINISHED") {
             let Card = CardMath(introversion,extraversion,lazy,productive,basic,chaotic, thinking, feeling);
+            console.log(Card);
             return (
-                Card
+                <DisplayFinalResult card={Card}/>
             );
         }
         // No question here; error checking
