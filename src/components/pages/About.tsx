@@ -2,6 +2,7 @@ import DisplayAll from "../DisplayAll.tsx";
 import DisplayAvatar from "../DisplayAvatar.tsx";
 import styled from "styled-components";
 import "/src/index.css";
+import { Link } from "react-router";
 
 const AllAvatarsDiv=styled.div`
     display: flex;
@@ -23,6 +24,7 @@ export default function About() {
     return(
         <>
             <main>
+                <Link className="minecraft-button" to={`/HomePreview`}>Back</Link>
                 <CenterH>About This Game:</CenterH>
                 <h2 className="about">We're just some CS girlies curious about which mob we might be. We made these mob cards for the final results of the quiz. Take our quiz to find out which mob you are!</h2>
                 <DisplayAll/>

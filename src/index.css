@@ -11,7 +11,7 @@
   --primary-hover: rgb(10, 152, 80);
   background-image: url("title-background-screen.jpg");
   background-size: cover;
-
+  height: 100vh;
 }
 
 @keyframes grow-animation {

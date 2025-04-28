@@ -1,9 +1,10 @@
 import styled from 'styled-components';
-const StyledImage = styled.img`
-    max-width: 30%;
-    margin: 1vh 1vw;
-`;
 
+const StyledImage = styled.img`
+    max-width: 19%;
+    margin: 1vh 2vw;
+`;
+// maybe create the viewing as a scrowling module instead of all of them on one screen at once
 export default function DisplayAll() {
     return(
         <>
