@@ -3,6 +3,7 @@ import DisplayAvatar from "../DisplayAvatar.tsx";
 import styled from "styled-components";
 import "/src/index.css";
 import { Link } from "react-router";
+import Footer from "../Footer.tsx";
 
 const AllAvatarsDiv=styled.div`
     display: flex;
@@ -45,12 +46,13 @@ export default function About() {
                 <DisplayAll/>
                 <CenterH>About the Creators:</CenterH>
                 <AllAvatarsDiv>
-                    <DisplayAvatar img="/amelia-avatar.png" name="Amelia" bio="Hey! I'm a CS major at BU, class of 2026. My favorite mob is an oceleot, and in the game I'm a builder."/>
+                    <DisplayAvatar img="/amelia-avatar.png" name="Amelia" bio="Hey! I'm a CS major at BU, class of 2026. My favorite mob is an oceleot, and my role in minecraft is a builder."/>
                     <DisplayAvatar img="/mia-avatar.png" name="Mia" bio="Hi Yall! I'm a CS Major part of the class of 2025. My favorite mob is the pig, and my role in Minecraft is Survivor (my king Jeff Probst!)"/>
                     <DisplayAvatar img="/kris-avatar.png" name="Kris" bio="Hey! I'm a CS major at BU, class of 2025. My favorite mob is the wolf or cow, and in the game I'm a miner, while my best friend is the builder."/>
                     <DisplayAvatar img="/sophia-avatar.png" name="Sophia" bio="Hi! I'm a CS major at BU, class of 2025. My favorite mod is an axolotl, and in the game I'm also a miner!"/>
                 </AllAvatarsDiv>
             </StyledMain>
+            <Footer/>
         </>
     )
 }
