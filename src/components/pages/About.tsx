@@ -4,6 +4,7 @@ import styled from "styled-components";
 import "/src/index.css";
 import { Link } from "react-router";
 import Footer from "../Footer.tsx";
+import Nav from "../Nav";
 
 const AllAvatarsDiv=styled.div`
     display: flex;
@@ -33,14 +34,16 @@ const StyledLink = styled(Link)`
 
 const StyledMain = styled.main`
     background: url('/backgrounds/dirtBackground.jpg');
+    padding: 1vw;
 `;
 
 
 export default function About() {
     return(
         <>
+            <Nav />
             <StyledMain>
-                {/* <StyledLink className="minecraft-button" to={`/HomePreview`}>Back</StyledLink> */}
+                 {/*<StyledLink className="minecraft-button" to={`/HomePreview`}>Back</StyledLink>*/}
                 <CenterH>About This Game:</CenterH>
                 <h2 className="about">We're just some CS girlies curious about which mob we might be. We made these mob cards for the final results of the quiz. Take our quiz to find out which mob you are!</h2>
                 <DisplayAll/>

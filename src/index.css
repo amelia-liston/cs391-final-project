@@ -56,6 +56,7 @@ body {
   margin-bottom: 0.5rem;
 }
 
+
 .minecraft-button::before {
   content: '';
   position: absolute;
@@ -88,6 +89,24 @@ body {
 .minecraft-button:hover {
   background-color: var(--primary-hover);
 }
+
+/* smaller version of minecraft button for navigation bar */
+.minecraft-button-small {
+    font-family: 'Minecraft', sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+    text-align: center;
+
+    text-shadow: var(--dark-green) 0 .1em 0;
+    color: var(--text-color);
+    position: relative;
+
+    width: 7em;
+    padding-bottom: .9rem;
+    border-radius: .1rem;
+    margin-bottom: 0.5rem;
+}
+
 
 /* SURV CREATE BUTTON + QUIZ BUTTONS */
 /* the about font */

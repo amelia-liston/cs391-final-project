@@ -7,6 +7,7 @@ import DisplayQuestion from '../DisplayQuestion.tsx';
 import CardMath from '../CardMath.tsx';
 import DisplayFinalResult from "../DisplayFinalResult.tsx";
 import OptArrayCreate from "../OptArrayCreate.tsx";
+import Nav from "../Nav";
 
 // Sophia: this function takes in the quiz type array and currId and returns the question
 // associated with the currId
@@ -125,6 +126,7 @@ export default function CreativeQuiz() {
                 // pass in the questions and answers as props into the function -mia
                 // handle select of what the player chooses
                 <>
+                    <Nav />
                     <DisplayQuestion
 
                         question={currQuestion.question}
