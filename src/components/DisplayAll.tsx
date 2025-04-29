@@ -11,7 +11,6 @@ const StyledDiv = styled.div`
     text-align: center;
 `;
 
-// maybe create the viewing as a scrowling module instead of all of them on one screen at once
 export default function DisplayAll() {
     return(
         <>

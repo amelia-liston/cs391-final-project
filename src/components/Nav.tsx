@@ -1,6 +1,6 @@
 //Nav component created by Amelia Liston
 //this is not intended to be displayed on every page, which is why it is not displayed in App.tsx
-//this is displayed on About page, CreativeQuiz page, SurvivalQuiz page, and LoadingResults
+//this is displayed on About page, CreativeQuiz page, SurvivalQuiz page, LoadingResults, and DisplayFinalResult
 
 import styled from 'styled-components';
 import {Link} from "react-router";

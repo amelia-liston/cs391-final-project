@@ -2,6 +2,7 @@
 
 import {Link} from "react-router";
 import styled from "styled-components";
+import Nav from "./Nav.tsx";
 
 // props for taking in the card string from the creativeQuiz/survivalQuiz.tsx
 interface DisplayProps {
@@ -183,6 +184,7 @@ export default function DisplayFinalResult({card}:DisplayProps) {
     else {
         return (
             <>
+                <Nav />
                 <StyledDiv>
                     <DirtWrapper>
                         <StyledDiv>

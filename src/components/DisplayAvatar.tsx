@@ -1,3 +1,5 @@
+//DisplayAvatar component created by Amelia Liston
+
 import styled from "styled-components";
 import "/src/index.css";
 

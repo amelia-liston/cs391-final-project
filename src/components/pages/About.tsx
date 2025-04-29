@@ -1,3 +1,5 @@
+//About page component created by Amelia Liston
+
 import DisplayAll from "../DisplayAll.tsx";
 import DisplayAvatar from "../DisplayAvatar.tsx";
 import styled from "styled-components";
