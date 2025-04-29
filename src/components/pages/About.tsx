@@ -4,7 +4,6 @@ import DisplayAll from "../DisplayAll.tsx";
 import DisplayAvatar from "../DisplayAvatar.tsx";
 import styled from "styled-components";
 import "/src/index.css";
-import { Link } from "react-router";
 import Footer from "../Footer.tsx";
 import Nav from "../Nav";
 
