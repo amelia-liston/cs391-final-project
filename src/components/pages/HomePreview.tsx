@@ -19,7 +19,7 @@ const StyledImg = styled.img`
 const StyledYellowText = styled.img`
     max-width: 20%;
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 63%;
     rotate: -15deg;
     animation: grow-animation 4s infinite alternate;
