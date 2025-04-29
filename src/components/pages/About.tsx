@@ -23,17 +23,6 @@ const CenterH = styled.h1`
     font-weight: lighter;
 `;
 
-
-const StyledLink = styled(Link)`
-    display: flex;
-    flex-direction: column;
-    margin: 1vw;
-    text-align: center;
-    width: 22%;
-    padding: 0.3vw 3vw 1vw 3vw;
-    // font-size: calc(2px + 2vw);
-`;
-
 const StyledMain = styled.main`
     background: url('/backgrounds/dirtBackground.jpg');
     padding: 1vw;
