@@ -11,7 +11,7 @@
   --border-color: rgb(40, 18, 18);
   --text-color: white;
   --primary-hover: rgb(10, 152, 80);
-  background-image: url("title-background-screen.jpg");
+  background-image: url("/title-background-screen.jpg");
   background-size: cover;
   /* background: black; */
 
