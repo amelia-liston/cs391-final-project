@@ -43,7 +43,7 @@ const QuestionBox = styled.div`
   margin-bottom: 1.5rem;
   text-align: center;
 
-  font-size: clamp(0.3rem, 1.5vw, 1.3rem);
+  font-size: calc(4px + 1.5vw);
 
   
 `;
@@ -64,7 +64,7 @@ const OptionBtn = styled.button`
 
     font-family: 'Minecraftia', sans-serif;
     // dynamic font size!
-    font-size: clamp(0.3rem, 1.5vw, 1.5rem);
+    font-size: calc(2.5px + 1.25vw);
     text-decoration: none;
   	border-color: #AAA #565656 #565656 #AAA;
   	text-shadow: 3px 3px #4C4C4C;
