@@ -5,6 +5,7 @@ import SurvivalQuiz from "./components/pages/SurvivalQuiz.tsx";
 import CreativeQuiz from "./components/pages/CreativeQuiz.tsx";
 import QuizStart from './components/pages/QuizStart.tsx';
 import About from './components/pages/About';
+import Nav from './components/Nav';
 
 import { Route, Routes, createBrowserRouter, RouterProvider } from "react-router";
 import { styled } from "styled-components";
@@ -19,7 +20,7 @@ const StyledDiv = styled.div`
 export function Root() {
   return (
       <>
-           <Routes>
+          <Routes>
               <Route path={`/*`}
                       element={<HomePreview />}
               />
