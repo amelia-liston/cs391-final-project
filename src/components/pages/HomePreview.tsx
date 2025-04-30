@@ -24,21 +24,21 @@ const StyledImg = styled.img`
 const StyledYellowText = styled.img`
     max-width: 20%;
     position: absolute;
-    top: 20%;
-    left: 63%;
+    top: 15%;
+    left: 60%;
     rotate: -15deg;
     animation: grow-animation 4s infinite alternate;
 
     @media screen and (max-width:1000px) { 
-        max-width: 23%;
-        top: 23%;
+        max-width: 20%;
+        top: 20%;
         left: 59%;
     }
 
     @media screen and (max-width:750px) { 
-        max-width: 40%;
-        top: 25%;
-        left: 59%;
+        max-width: 35%;
+        top: 20%;
+        left: 60%;
     }
 `;
 
