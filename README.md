@@ -6,7 +6,7 @@
 ## Team Members:
 - Mia Batista ()
 - Sophia Howsen ()
-- Amelia Liston ()
+- Amelia Liston (aliston@bu.edu)
 - Kristine Peters (rkkp@bu.edu)
 
 ### Mia's Components/Work
@@ -20,9 +20,11 @@
 -
 
 ### Amelia's Components/Work
--
--
--
+- About.tsx
+- DisplayAll.tsx
+- DisplayAvatar.tsx
+- Footer.tsx
+- Nav.tsx
 
 ### Kristine's Components/Work
 - App.tsx
