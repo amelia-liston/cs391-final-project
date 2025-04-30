@@ -126,7 +126,7 @@ export default function CreativeQuiz() {
                 // pass in the questions and answers as props into the function -mia
                 // handle select of what the player chooses
                 <>
-                    <Nav />
+                    {/* <Nav /> */}
                     <DisplayQuestion
 
                         question={currQuestion.question}
