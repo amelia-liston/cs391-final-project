@@ -56,7 +56,7 @@ const QuestionBox = styled.div`
 
   font-size: calc(4px + 1.5vw);
 
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     font-size: calc(12px + 1vw);
   }
   
