@@ -5,7 +5,7 @@ Which Minecraft character are you? Take the quiz to find out!
 
 ## Team Members:
 - Mia Batista (miajolie@bu.edu)
-- Sophia Howsen ()
+- Sophia Howsen (showson@bu.edu)
 - Amelia Liston (aliston@bu.edu)
 - Kristine Peters (rkkp@bu.edu)
 
@@ -19,9 +19,9 @@ Which Minecraft character are you? Take the quiz to find out!
 - survivalQuestions.json/creativeQuestions.json --> types
 
 ### Sophia's Components/Work
--
--
--
+- survivalQuestions.json/creativeQuestions.json --> framework + putting story in
+- DisplayFinaleResult.tsx
+- CreativeQuiz.tsx/SurvivalQuiz.tsx --> fetching from JSON
 
 ### Amelia's Components/Work
 - About.tsx
@@ -35,4 +35,4 @@ Which Minecraft character are you? Take the quiz to find out!
 - HomePreview.tsx
 - QuizStart.tsx
 - QRCode.tsx
-- Styling for the backgound landscape, green buttons, grey buttons, and yellow animated text on the home page.
+- Styling for the background landscape, green buttons, grey buttons, and yellow animated text on the home page.
