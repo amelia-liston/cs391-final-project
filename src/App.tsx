@@ -6,6 +6,7 @@ import SurvivalQuiz from "./components/pages/SurvivalQuiz.tsx";
 import CreativeQuiz from "./components/pages/CreativeQuiz.tsx";
 import QuizStart from './components/pages/QuizStart.tsx';
 import About from './components/pages/About';
+import QRCode from './components/pages/QRCode.tsx';
 
 import { Route, Routes, createBrowserRouter, RouterProvider } from "react-router";
 import { styled } from "styled-components";
@@ -35,6 +36,9 @@ export function Root() {
                />
                <Route path={`/About`}
                       element={<About />}
+               />
+               <Route path={`/QRCode`}
+                      element={<QRCode />}
                />
           </Routes>
       </>
