@@ -31,7 +31,7 @@ const StyledImg = styled.img`
 const StyledYellowText = styled.img`
     max-width: 20%;
     position: absolute;
-    top: 2%;
+    top: 1%;
     left: 60%;
     rotate: -15deg;
     animation: grow-animation 4s infinite alternate;
@@ -43,17 +43,17 @@ const StyledYellowText = styled.img`
         left: 60%;
   }
 
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: 768px) {
         max-width: 28%;
         top: 15%;
         left: 70%;
     }
 
     @media screen and (max-width: 500px) {
-        max-width: 40%;
-        top: 32%;
-        left: 52%;
-        rotate: -10deg;
+        max-width: 30%;
+        top:15%;
+        left: 70%;
+        rotate: -15deg;
     }
 `;
 
