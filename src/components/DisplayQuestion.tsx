@@ -11,12 +11,18 @@ export const QuizWrapper = styled.div`
 
   width: 65vw;
   height: 65vh;
-  // background: url('/backgrounds/dirtBackground.jpg') top center;
   display: flex;
   align-items: center;
   justify-content: center;
 
   box-sizing: border-box;
+
+  // media query for screen size
+  @media screen and (max-width: 768px) {
+    width: 90vw;
+    height: auto;
+    padding: 1rem 0;
+  }
 `;
 //the metal box inside dirt div
 const Panel = styled.div`
@@ -31,6 +37,11 @@ const Panel = styled.div`
     
     box-shadow: inset -2px -2px #2a2a2a,
                 inset 2px  2px #4a4a4a;
+
+    @media screen and (max-width: 768px) {
+      padding: 1.5rem;
+      width: 100%;
+  }
 `;
 
 const QuestionBox = styled.div`
@@ -45,6 +56,9 @@ const QuestionBox = styled.div`
 
   font-size: calc(4px + 1.5vw);
 
+  @media screen and (max-width: 768px) {
+    font-size: calc(12px + 1vw);
+  }
   
 `;
 
@@ -57,6 +71,7 @@ const OptionsGrid = styled.div`
   justify-content: center;
 
   display: inline-block;
+
 `;
 
 const OptionBtn = styled.button`
@@ -98,6 +113,11 @@ const OptionBtn = styled.button`
     &:active {
       box-shadow: inset -2px -4px #0004, inset 2px 2px #FFF5;
     }
+
+    @media screen and (max-width: 768px) {
+    font-size: calc(12px + 0.5vw);
+    padding: 0.75rem;
+  }
 `;
 
 //props
