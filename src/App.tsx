@@ -1,4 +1,5 @@
 import './App.css'
+// kris worked on routing
 
 import HomePreview from './components/pages/HomePreview';
 import SurvivalQuiz from "./components/pages/SurvivalQuiz.tsx";
@@ -15,7 +16,7 @@ const StyledDiv = styled.div`
     // background-size: cover;
 `;
 
-
+// Using a Root function to get paths to each page we have in the program.
 export function Root() {
   return (
       <>
@@ -44,7 +45,9 @@ const router = createBrowserRouter(
   [{path:"*", Component:Root}]
 );
 
+// Using the Router Provider to handle pages instead of going directly to the HomePage
 export default function App() {
+
   return (
       <StyledDiv>
           <RouterProvider router={router} />
