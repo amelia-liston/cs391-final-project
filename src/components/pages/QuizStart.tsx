@@ -10,6 +10,12 @@ const StyledLink = styled(Link)`
     text-align: center;
     padding: 1vw 7vw 1.5vw 7vw;
     font-size: calc(2px + 2vw);
+
+    @media screen and (max-width: 750px) {
+        padding: 4vw 23vw 4.5vw 23vw;
+        font-size: calc(2px + 5vw);
+        margin: 2vw;
+    }
 `;
 
 const StyledLink2 = styled(Link)`
@@ -19,6 +25,12 @@ const StyledLink2 = styled(Link)`
     text-align: center;
     padding: 1vw 0 1.5vw 0;
     font-size: calc(2px + 1.5vw);
+    
+    @media screen and (max-width: 750px) {
+        padding: 4vw 23vw 4vw 23vw;
+        font-size: calc(2px + 5vw);
+        margin: 8vw 2vw 2vw 2vw;
+    }
 `;
 
 export default function QuizStart() {
