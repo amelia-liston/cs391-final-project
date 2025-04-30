@@ -1,5 +1,8 @@
+// mias component
 import {QuizTypes, Option} from "../../quizTypes.tsx";
 
+// creates an instance of options that stores the options the player can choose from 
+// returns the info associated with the option the player selects 
 export default function OptArrayCreate(currQuestion:QuizTypes) {
     const options: Option[] = []
     if (currQuestion.a1 && currQuestion.a1nextId) {

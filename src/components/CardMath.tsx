@@ -1,6 +1,7 @@
 // returns the string ID associated with the card 
 // once returned the XxXquiz componnt will run if ("string") conditionals
 // and display the correct card by calling a seperate component or just doing it in there
+// mias component
 
 export default function CardMath(
     introversion: number,
