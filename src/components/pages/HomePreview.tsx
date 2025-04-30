@@ -11,6 +11,13 @@ const StyledDiv = styled.div`
     align-items: center;gap: 1rem;
 `;
 
+const LogoContainer = styled.div`
+    position: relative;
+    width: fit-content;
+    display: inline-block;
+    padding-bottom: 2rem;
+`;
+
 const StyledImg = styled.img`
     max-width: 50%;
     margin-bottom: 2vw;
@@ -24,21 +31,29 @@ const StyledImg = styled.img`
 const StyledYellowText = styled.img`
     max-width: 20%;
     position: absolute;
-    top: 15%;
+    top: 2%;
     left: 60%;
     rotate: -15deg;
     animation: grow-animation 4s infinite alternate;
 
-    @media screen and (max-width:1000px) { 
+
+    @media screen and (max-width: 1000px) {
         max-width: 20%;
-        top: 20%;
-        left: 59%;
+        top: 2%;
+        left: 60%;
+  }
+
+    @media screen and (max-width: 750px) {
+        max-width: 28%;
+        top: 15%;
+        left: 70%;
     }
 
-    @media screen and (max-width:750px) { 
-        max-width: 35%;
-        top: 20%;
-        left: 60%;
+    @media screen and (max-width: 500px) {
+        max-width: 40%;
+        top: 32%;
+        left: 52%;
+        rotate: -10deg;
     }
 `;
 
@@ -69,8 +84,11 @@ export default function HomePreview() {
     return (
         <>
             <StyledDiv>
-                <StyledImg src="minecraft-logo-3.svg" alt="minecraft logo"></StyledImg><br></br>
-                <StyledYellowText src={text} alt={text} />
+                <LogoContainer>
+                    <StyledImg src="minecraft-logo-3.svg" alt="minecraft logo"></StyledImg><br></br>
+                    <StyledYellowText src={text} alt={text} />
+                </LogoContainer>
+        
                 <Link className="minecraft-button" to={`/QuizStart`}>Play</Link>
                 <Link className="minecraft-button" to={`/QRCode`}>Play Along</Link>
                 {/* <button className="minecraft-btn mx-auto w-64 text-center text-white truncate p-1 border-2 border-b-4 hover:text-yellow-200">Click me!</button> */}
