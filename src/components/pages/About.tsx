@@ -18,7 +18,7 @@ const CenterH = styled.h1`
     text-align: center;
     color: var(--text-color); 
     font-family: 'Minecraft', sans-serif;
-    font-size: 3rem;
+    font-size: calc(5px + 4vw);
     font-weight: lighter;
 `;
 
@@ -27,15 +27,18 @@ const StyledMain = styled.main`
     padding: 1vw;
 `;
 
+const StyledH2 = styled.h2`
+    font-size: calc(5px + 2vw);
+`;
+
 
 export default function About() {
     return(
         <>
             <Nav />
             <StyledMain>
-                 {/*<StyledLink className="minecraft-button" to={`/HomePreview`}>Back</StyledLink>*/}
                 <CenterH>About This Game:</CenterH>
-                <h2 className="about">We're just some CS girlies curious about which mob we might be. We made these mob cards for the final results of the quiz. Take our quiz to find out which mob you are!</h2>
+                <StyledH2 className="about">We're just some CS girlies curious about which mob we might be. We made these mob cards for the final results of the quiz. Take our quiz to find out which mob you are!</StyledH2>
                 <DisplayAll/>
                 <CenterH>About the Creators:</CenterH>
                 <AllAvatarsDiv>
