@@ -1,18 +1,22 @@
 # Minecraft Personality Quiz (CS391 Final Project)
 
 ## About this project:
-
+Which Minecraft character are you? Take the quiz to find out!
 
 ## Team Members:
-- Mia Batista ()
+- Mia Batista (miajolie@bu.edu)
 - Sophia Howsen ()
 - Amelia Liston (aliston@bu.edu)
 - Kristine Peters (rkkp@bu.edu)
 
 ### Mia's Components/Work
--
--
--
+- CreativeQuiz.tsx/SurvivalQuiz.tsx --> handleSelect()
+- DisplayQuestion.tsx
+- OptArrayCreate.tsx
+- CardMath.sx
+- Storyline
+- Creature Cards
+- survivalQuestions.json/creativeQuestions.json --> types
 
 ### Sophia's Components/Work
 -
