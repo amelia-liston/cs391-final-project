@@ -14,6 +14,11 @@ const StyledDiv = styled.div`
 const StyledImg = styled.img`
     max-width: 50%;
     margin-bottom: 2vw;
+    
+    @media screen and (max-width:750px) { 
+        max-width: 90%;
+
+    }
 `;
 
 const StyledYellowText = styled.img`
@@ -23,6 +28,18 @@ const StyledYellowText = styled.img`
     left: 63%;
     rotate: -15deg;
     animation: grow-animation 4s infinite alternate;
+
+    @media screen and (max-width:1000px) { 
+        max-width: 23%;
+        top: 23%;
+        left: 59%;
+    }
+
+    @media screen and (max-width:750px) { 
+        max-width: 40%;
+        top: 25%;
+        left: 59%;
+    }
 `;
 
 
