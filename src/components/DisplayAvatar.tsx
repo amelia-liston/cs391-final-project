@@ -22,13 +22,22 @@ const OneAvatarDiv=styled.div`
     text-align: center;
 `;
 
+const StyledH3 = styled.h3`
+    font-size: calc(4px + 3vw);
+    color: lightgreen;
+`;
+
+const StyledH4 = styled.h4`
+    font-size: calc(4px + 2vw);
+`;
+
 export default function DisplayAvatar({ name, img, bio }: AvatarProps) {
     return(
         <>
             <OneAvatarDiv>
                 <StyledImage src={img} alt={`${name}'s Avatar`} />
-                <h3 className="about">{name}</h3>
-                <h4 className="about">{bio}</h4>
+                <StyledH3 className="about">{name}</StyledH3>
+                <StyledH4 className="about">{bio}</StyledH4>
             </OneAvatarDiv>
 
         </>

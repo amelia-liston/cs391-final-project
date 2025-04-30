@@ -12,6 +12,9 @@ const StyledFooter=styled.footer`
     font-size: calc(5px + 1vw);
     padding: 1vh 1vw;
     color: white;
+    font-family: 'Minecraft', sans-serif;
+    background: url('/backgrounds/dirtBackground.jpg');
+    margin-bottom: 1rem;
 `;
 
 //the default dark blue is not legible, so this changes the linked words to a lighter blue
