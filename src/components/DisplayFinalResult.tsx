@@ -9,6 +9,13 @@ interface DisplayProps {
     card: string
 }
 
+
+// page wrapper
+const PageWrapper = styled.div`
+  width: 100%;
+  max-width: 100vw;
+`;
+
 // Creating a background wrapper so that the text is more seperated from actual background
 export const DirtWrapper = styled.div`
   background: url('/backgrounds/dirtBackground.jpg');
@@ -17,10 +24,17 @@ export const DirtWrapper = styled.div`
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  width: 60%;
-  height: 40%;
+  width: 50%;
+//   height: 40%;
+  height: auto;
   margin: auto;
   padding: 2% 1%;
+
+    @media screen and (max-width: 768px) {
+        width: 95%;
+        padding: 5%;
+  }
+
 `;
 
 // styled div to center items and have them in a column!
@@ -49,10 +63,36 @@ const CenterH = styled.h1`
     text-align: center;
     color: var(--text-color); 
     font-family: 'Minecraft', sans-serif;
-    font-size: 3rem;
+    font-size: 2.75rem;
     font-weight: lighter;
-    margin: 1vw;
+    margin: 0.5vw;
+    margin-bottom: 0.25rem;
+
+    @media screen and (max-width: 768px) {
+        font-size: 2rem;
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: 1.5rem;
+    }
+
 `;
+
+// type text also!
+const CenterHSec = styled.h2`
+    text-align: center;
+    font-family: 'Minecraft', sans-serif;
+    color: var(--text-color);
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+
+    @media screen and (max-width: 768px) {
+        font-size: 1.5rem;
+    }
+`
+
+
 
 // This function takes the card combo string, finds the correct card image from src,
 // and outputs an object comprising an image and its corresponding alt string
@@ -183,20 +223,20 @@ export default function DisplayFinalResult({card}:DisplayProps) {
 
     else {
         return (
-            <>
+            <PageWrapper>
                 <Nav />
                 <StyledDiv>
                     <DirtWrapper>
                         <StyledDiv>
                             <CenterH>Final result:</CenterH>
-                            <CenterH>Type: {card}</CenterH>
+                            <CenterHSec>Type: {card}</CenterHSec>
                             <StyledImage src={finalCard.img} alt={finalCard.alt}/>
                         </StyledDiv>
                     </DirtWrapper>
                     <StyledLink className="minecraft-button" to={finalCard.img} target="_blank" download>Download</StyledLink>
                     {/*<StyledLink className="minecraft-button" to={'/QuizStart'}>Take it again?</StyledLink>*/}
                 </StyledDiv>
-            </>
+            </PageWrapper>
         );
     }
 }
