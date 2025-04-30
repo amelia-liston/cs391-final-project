@@ -20,8 +20,9 @@ Which Minecraft character are you? Take the quiz to find out!
 
 ### Sophia's Components/Work
 - survivalQuestions.json/creativeQuestions.json --> framework + putting story in
-- DisplayFinaleResult.tsx
+- DisplayFinalResult.tsx
 - CreativeQuiz.tsx/SurvivalQuiz.tsx --> fetching from JSON
+- quizTypes.tsx
 
 ### Amelia's Components/Work
 - About.tsx
